@@ -1,0 +1,111 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Background ===== */
+body {
+  width: 320px;
+  height: 420px;
+  background: linear-gradient(135deg, #232526, #414345);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== App Container ===== */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 90%;
+}
+
+/* ===== Title ===== */
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Timer Card ===== */
+.timer-card {
+  width: 100%;
+  padding: 1.2rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Glass Effect ===== */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Timer Text ===== */
+.timer-display {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f9fafb;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Button Group ===== */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.start {
+  background-color: #4ade80;
+  color: #0f172a;
+}
+
+.pause {
+  background-color: #facc15;
+  color: #0f172a;
+}
+
+.reset {
+  background-color: #f87171;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* ===== Spotify Player ===== */
+.spotify-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
