@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { FiRefreshCw, FiSettings } from "react-icons/fi";
 import background from "../assets/background.jpg";
 import SettingsModal from "../components/SettingModal";
+import Spotify from "../components/Spotify";
 // import SettingsModal from "../components/SettingsModal";
 
 function PomodoroPage() {
@@ -107,6 +108,8 @@ function PomodoroPage() {
         onClose={() => setIsModalOpen(false)}
         onSave={handleSaveSettings}
       />
+
+      <Spotify></Spotify>
     </div>
   );
 }
